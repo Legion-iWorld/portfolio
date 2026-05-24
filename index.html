@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Legion iWorld Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     body {
       background: #000;
@@ -41,20 +42,22 @@
   <div class="glow1"></div>
   <div class="glow2"></div>
 
-  <!-- NAVBAR -->
+  <!-- NAV -->
   <nav class="relative z-10 flex items-center justify-between px-8 py-6 border-b border-white/10 backdrop-blur-lg">
     <h1 class="text-2xl font-bold tracking-widest uppercase">Legion iWorld</h1>
 
-    <div class="hidden md:flex gap-8 text-sm uppercase tracking-widest text-gray-300">
-      <a href="#about" class="hover:text-white transition">About</a>
-      <a href="#projects" class="hover:text-white transition">Projects</a>
-      <a href="#skills" class="hover:text-white transition">Skills</a>
-      <a href="#contact" class="hover:text-white transition">Contact</a>
+    <div class="hidden md:flex gap-8 text-sm uppercase text-gray-300">
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#projects" class="hover:text-white">Projects</a>
+      <a href="#skills" class="hover:text-white">Skills</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="relative z-10 px-8 md:px-20 py-24 flex flex-col md:flex-row items-center justify-between gap-16">
+
+    <!-- LEFT -->
     <div class="max-w-2xl">
       <p class="uppercase tracking-[0.4em] text-cyan-400 mb-4 text-sm">
         Front-End Developer & Freelancer
@@ -69,7 +72,7 @@
       </h1>
 
       <p class="text-gray-400 text-lg leading-relaxed mb-8">
-        Hi, I'm Addison Possible — a creative web developer building modern and functional digital products.
+        Hi, I'm Addison Possible — I build modern web apps and digital experiences.
       </p>
 
       <div class="flex gap-4 flex-wrap">
@@ -82,93 +85,126 @@
         </a>
       </div>
     </div>
+
+    <!-- RIGHT HERO CARD (RESTORED) -->
+    <div class="relative">
+
+      <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-600 blur-2xl opacity-30 rounded-3xl"></div>
+
+      <div class="relative w-[320px] h-[400px] bg-white/5 border border-white/10 rounded-3xl backdrop-blur-xl p-8 flex flex-col justify-between">
+
+        <div>
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-400 to-purple-600 mb-6"></div>
+
+          <h2 class="text-3xl font-bold mb-4">Legion iWorld</h2>
+
+          <p class="text-gray-400">
+            Crafting clean, modern and scalable web experiences.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 text-sm">
+
+          <div class="bg-white/5 rounded-2xl p-4 border border-white/10">
+            <p class="text-3xl font-bold">3+</p>
+            <span class="text-gray-400">Years</span>
+          </div>
+
+          <div class="bg-white/5 rounded-2xl p-4 border border-white/10">
+            <p class="text-3xl font-bold">20+</p>
+            <span class="text-gray-400">Projects</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="relative z-10 px-8 md:px-20 py-20">
-    <p class="uppercase tracking-[0.3em] text-cyan-400 mb-4 text-sm">About Me</p>
-
-    <h2 class="text-4xl md:text-5xl font-black mb-8">
-      Passionate About Building Powerful Web Experiences.
-    </h2>
-
-    <p class="text-gray-400 text-lg leading-relaxed max-w-4xl">
-      I develop modern, responsive websites using HTML, CSS, JavaScript, PHP, and MySQL.
+    <h2 class="text-4xl md:text-5xl font-black mb-6">About Me</h2>
+    <p class="text-gray-400 max-w-3xl">
+      I build responsive websites using HTML, CSS, JavaScript, PHP, and MySQL.
     </p>
   </section>
 
-  <!-- PROJECTS -->
-<section id="projects" class="relative z-10 px-8 md:px-20 py-20">
-  <p class="uppercase tracking-[0.3em] text-cyan-400 mb-4 text-sm">Featured Work</p>
+  <!-- PROJECTS (WITH IMAGES FIXED) -->
+  <section id="projects" class="relative z-10 px-8 md:px-20 py-20">
 
-  <h2 class="text-4xl md:text-5xl font-black mb-12">Selected Projects.</h2>
+    <h2 class="text-4xl md:text-5xl font-black mb-12">Selected Projects</h2>
 
-  <div class="grid md:grid-cols-3 gap-8">
+    <div class="grid md:grid-cols-3 gap-8">
 
-    <!-- PROJECT 1 -->
-    <div class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:border-cyan-400/50 transition hover:-translate-y-2">
+      <!-- PROJECT 1 -->
+      <div class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden">
 
-      <img
-        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-        class="h-48 w-full object-cover"
-      />
+        <img src="/images/The_Hub.png" alt="The Hub">
 
-      <div class="p-6">
-        <h3 class="text-2xl font-bold mb-2">Neighborhood Hub</h3>
-        <p class="text-gray-400 leading-relaxed">
-          Hyperlocal marketplace connecting nearby buyers and sellers in real time.
-        </p>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2">Neighborhood Hub</h3>
+          <p class="text-gray-400">Hyperlocal marketplace connecting buyers and sellers.</p>
+        </div>
       </div>
+
+      <!-- PROJECT 2 -->
+      <div class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden">
+
+        <img src="/images/vent.png" alt="Anonymous Venting Site">
+
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2">Modern Chat App</h3>
+          <p class="text-gray-400">Real-time messaging with vanish mode.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden">
+
+        <img src="/images/dashboard.png" alt="Dashboard">
+
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2">Crypto Dashboard</h3>
+          <p class="text-gray-400">Investment tracking system for crypto mining.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+ <section id="skills" class="relative z-10 px-8 md:px-20 py-20">
+  <h2 class="text-4xl md:text-5xl font-black mb-12">Skills</h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:scale-105 transition">
+      <div class="text-3xl mb-2">🌐</div>
+      <div>HTML</div>
     </div>
 
-    <!-- PROJECT 2 -->
-    <div class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:border-cyan-400/50 transition hover:-translate-y-2">
-
-      <img
-        src="https://images.unsplash.com/photo-1557825835-70d97c4aa567"
-        class="h-48 w-full object-cover"
-      />
-
-      <div class="p-6">
-        <h3 class="text-2xl font-bold mb-2">Modern Chat App</h3>
-        <p class="text-gray-400 leading-relaxed">
-          Real-time messaging app with vanish mode, ping system, and discovery features.
-        </p>
-      </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:scale-105 transition">
+      <div class="text-3xl mb-2">🎨</div>
+      <div>CSS</div>
     </div>
 
-    <!-- PROJECT 3 -->
-    <div class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:border-cyan-400/50 transition hover:-translate-y-2">
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:scale-105 transition">
+      <div class="text-3xl mb-2">⚡</div>
+      <div>JavaScript</div>
+    </div>
 
-      <img
-        src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7"
-        class="h-48 w-full object-cover"
-      />
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:scale-105 transition">
+      <div class="text-3xl mb-2">🐘</div>
+      <div>PHP</div>
+    </div>
 
-      <div class="p-6">
-        <h3 class="text-2xl font-bold mb-2">Crypto Dashboard</h3>
-        <p class="text-gray-400 leading-relaxed">
-          Investment tracking dashboard for mining profits and analytics.
-        </p>
-      </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:scale-105 transition">
+      <div class="text-3xl mb-2">🗄️</div>
+      <div>MySQL</div>
     </div>
 
   </div>
 </section>
-  <!-- SKILLS -->
-  <section id="skills" class="relative z-10 px-8 md:px-20 py-20">
-    <p class="uppercase tracking-[0.3em] text-cyan-400 mb-4 text-sm">Skills</p>
-
-    <h2 class="text-4xl md:text-5xl font-black mb-12">Technologies I Use.</h2>
-
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
-      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">HTML5</div>
-      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">CSS3</div>
-      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">JavaScript</div>
-      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">PHP</div>
-      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">MySQL</div>
-    </div>
-  </section>
 
   <!-- CONTACT -->
 <section id="contact" class="relative z-10 px-8 md:px-20 py-24">
@@ -222,9 +258,9 @@
 </section>
 
   <!-- FOOTER -->
-  <footer class="relative z-10 px-8 md:px-20 py-10 border-t border-white/10 text-gray-500 text-sm flex flex-col md:flex-row justify-between gap-4">
-    <p>© 2026 Legion iWorld. All rights reserved.</p>
-    <p>Designed & Developed by Addison Possible.</p>
+  <footer class="relative z-10 px-8 md:px-20 py-10 border-t border-white/10 text-gray-500 text-sm flex justify-between">
+    <p>© 2026 Legion iWorld</p>
+    <p>Built by Addison Possible</p>
   </footer>
 
 </body>
